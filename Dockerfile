@@ -12,6 +12,8 @@ COPY . .
 
 RUN npm run build
 
+COPY . .
+
 CMD ["npm", "start"]
 
 EXPOSE 5000
