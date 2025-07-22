@@ -23,7 +23,7 @@ async function connection() {
          console.log(`Application is listening on 0.0.0.0:5000`);
       });
    } catch (err) {
-      console.log('server errooooooooooorrrrr');
+      console.log('server errooooooooooorrrrr', err);
       // errorlogger.error(err);
    }
 

@@ -12,6 +12,10 @@ services:
       - .:/app
     networks:
       - app-network
+    # env_file:
+    #   - .env
+    depends_on:
+      - mongodb
     environment:
       - DATABASE_URL=mongodb://admin:password@mongodb:27017/pickone?authSource=admin 
   

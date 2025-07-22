@@ -6,8 +6,12 @@ COPY package.json .
 
 RUN npm install
 
-RUN npm run build
+RUN npm install -g typescript
 
 COPY . .
 
+RUN npm run build
+
 CMD ["npm", "start"]
+
+EXPOSE 5000
